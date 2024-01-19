@@ -16,3 +16,6 @@ Translate dxbc to hlsl source code. You can use it alone, or as a renderdoc shad
 2. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> View -> Disassembly type : HLSL (DXBC->HLSL)
 3. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> Edit
 4. Modify shader as you wish, and click Refresh button to see the change
+
+### How to integrate into renderdoc(v2)
+see blog : https://blog.csdn.net/linjf520/article/details/135704656
