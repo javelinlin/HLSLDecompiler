@@ -4,16 +4,15 @@ Translate dxbc to hlsl source code. You can use it alone, or as a renderdoc shad
 
 ### How to integrate into renderdoc
 
-1. Put `hlsl_decompiler_wrapper.bat` and `cmd_Decompiler.exe` in the same directory
-2. Renderdoc -> Tools -> Settings -> Shader Viewer -> Add
+1. Renderdoc -> Tools -> Settings -> Shader Viewer -> Add
     | Field | Value |
     |------|:--------------:|
     | Name | DXBC->HLSL |
     | Tool Type | Custom Tool |
-    | Executable | Set absolute path of `HLSLDecompiler/RenderDoc_DXBC2HLSL_shader_view_files/v2/hlsl_decompiler_wrapper.bat` |
+    | Executable | Set absolute path of `RenderDoc_DXBC2HLSL_shader_view_files/v2/hlsl_decompiler_wrapper.bat` |
     | Command Line | {input_file} {output_file} (**Notice the space between**) |
     | Input/Output | DXBC/HLSL |
 
-3. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> View -> Disassembly type : HLSL (DXBC->HLSL)
-4. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> Edit
-5. Modify shader as you wish, and click Refresh button to see the change
+2. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> View -> Disassembly type : HLSL (DXBC->HLSL)
+3. Renderdoc -> Pipeline State View -> Choose Any Shader Stage -> Edit
+4. Modify shader as you wish, and click Refresh button to see the change
